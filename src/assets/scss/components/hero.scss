@@ -1,0 +1,145 @@
+.hero {
+  height: 100vh;
+  min-height: 500px;
+  position: relative;
+  overflow: hidden;
+
+  .grid-container, .grid-x {
+    height: 100%;
+    position: relative;
+  }
+
+  .cell {
+    z-index: 99;
+  }
+
+  h2 {
+    font-family: futura-pt, sans-serif;
+    font-weight: normal;
+    font-size: 22px;
+  }
+
+  .content {
+    padding: 3em 0em;
+    color: white;
+
+    .button {
+      margin-top: 2em;
+    }
+  }
+
+  .hero-image {
+    position: absolute;
+    top:0;
+    left: 40%;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+
+    .image {
+      position: absolute;
+      top:0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-size: cover;
+      background-position: left;
+      animation: kenburns 40s infinite;
+    }
+
+    .span-container {
+      position: absolute;
+      bottom: 0;
+      left: 35%;
+      right: 0;
+    }
+
+    span {
+      width: 25%;
+      display: inline-block;
+      height: 15px;
+      background-color: red;
+      float: left;
+    }
+
+    .colour-1 {
+      background-color: #364489;
+    }
+
+    .colour-2 {
+      background-color: #D73479;
+    }
+    .colour-3 {
+      background-color: #00A495;
+    }
+    .colour-4 {
+       background-color: #EDB92A;
+     }
+
+  }
+
+  &:before {
+    content:"";
+    position: absolute;
+    bottom: -50vh;
+    left: -50vh;
+    right: 50%;
+    top: -50vh;
+    background-color: #222E38;
+    z-index: 99;
+    transform: rotate(-20deg);
+
+  }
+
+}
+
+
+@include breakpoint(medium down) {
+  .hero {
+    height:90vh;
+  }
+
+  .hero .hero-image {
+    left: 29%;
+    bottom: 17%;
+  }
+}
+
+@include breakpoint(small only) {
+  .hero {
+    height: initial;
+  }
+
+  .hero:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 300px;
+    background-color: #222E38;
+    z-index: 99;
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+  }
+
+  .hero .hero-image {
+    left: 0;
+    bottom: 0;
+    height: 300px;
+  }
+
+  .hero .content {
+    margin-top: 300px;
+  }
+
+  .hero .hero-image .span-container {
+    left: 0;
+  }
+
+  .hero h2 {
+    font-size: 17px;
+  }
+}
+
