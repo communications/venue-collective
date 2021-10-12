@@ -1,12 +1,13 @@
 .hero {
-  height: 100vh;
-  min-height: 500px;
+  height: 90vh;
+  min-height: 700px;
   position: relative;
   overflow: hidden;
 
   .grid-container, .grid-x {
     height: 100%;
     position: relative;
+    z-index: 999;
   }
 
   .cell {
@@ -20,11 +21,15 @@
   }
 
   .content {
-    padding: 3em 0em;
+    padding: 3em 0em 3em;
     color: white;
 
     .button {
       margin-top: 2em;
+    }
+
+    p {
+      width: 80%;
     }
   }
 
@@ -33,7 +38,7 @@
     top:0;
     left: 40%;
     right: 0;
-    bottom: 0;
+    bottom: 50px;
     overflow: hidden;
 
     .image {
@@ -47,10 +52,25 @@
       animation: kenburns 40s infinite;
     }
 
+    &:after {
+      content:"";
+      position: absolute;
+      top:0;
+      left: 0;
+      right: 0;
+      bottom:60%;
+      /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#000000+0,000000+100&0.84+0,0+100;Neutral+Density */
+      background: -moz-linear-gradient(top,  rgba(0,0,0,0.84) 0%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
+      background: -webkit-linear-gradient(top,  rgba(0,0,0,0.84) 0%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
+      background: linear-gradient(to bottom,  rgba(0,0,0,0.84) 0%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d6000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
+
+    }
+
     .span-container {
       position: absolute;
       bottom: 0;
-      left: 35%;
+      left: 25%;
       right: 0;
     }
 
@@ -85,9 +105,23 @@
     left: -50vh;
     right: 50%;
     top: -50vh;
-    background-color: #222E38;
+    background-color: $secondary-color;
     z-index: 99;
     transform: rotate(-20deg);
+
+  }
+
+
+  &:after {
+    content:"";
+    position: absolute;
+    bottom: -50vh;
+    left: -45vh;
+    right: 57%;
+    top: -50vh;
+    background-color: $primary-color;
+    z-index: 99;
+    transform: rotate(-28deg);
 
   }
 
@@ -143,3 +177,16 @@
   }
 }
 
+.smaller-hero {
+  height: 80vh;
+  min-height: 600px;
+
+  .content {
+    padding-bottom: 2em;
+  }
+
+  .hero-image span {
+    width: 100%;
+    background-color: #a1a9b0;
+  }
+}

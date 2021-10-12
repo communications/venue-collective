@@ -1,0 +1,212 @@
+.tile {
+  min-height: 300px;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  margin-top: 2em;
+  border-bottom: 8px solid white;
+  overflow: hidden;
+  color: white;
+
+  a {
+    color: white;
+  }
+
+  .image {
+    position: absolute;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-size: cover;
+    background-position: center;
+    transition: all 0.5s;
+
+    &:after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 200px;
+
+      /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#000000+0,000000+100&0+0,0.84+100 */
+      background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.84) 100%); /* FF3.6-15 */
+      background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.84) 100%); /* Chrome10-25,Safari5.1-6 */
+      background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.84) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#d6000000',GradientType=0 ); /* IE6-9 */
+
+    }
+  }
+
+  .content {
+    position: absolute;
+    bottom: 2em;
+    left: 2em;
+    right: 2em;
+    color: white;
+    z-index: 99;
+
+    h3 {
+      font-size: 29px;
+    }
+
+    p, .button {
+      display: none;
+    }
+
+    .button {
+      margin-bottom: 0px;
+    }
+
+  }
+
+  &:hover {
+    .image {
+      transform: scale(1.1);
+      transition: all 0.5s;
+
+    }
+
+    .content {
+      p {
+        display: block;
+      }
+
+      .button {
+        display: inline-block;
+      }
+    }
+
+    .image:after {
+      height: 100%;
+      /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#000000+0,000000+100&0+0,0.83+75 */
+      background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.83) 75%, rgba(0,0,0,0.83) 100%); /* FF3.6-15 */
+      background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.83) 75%,rgba(0,0,0,0.83) 100%); /* Chrome10-25,Safari5.1-6 */
+      background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.83) 75%,rgba(0,0,0,0.83) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#d4000000',GradientType=0 ); /* IE6-9 */
+
+    }
+  }
+}
+
+.belfast-tile {
+  min-height: 600px;
+  position: relative;
+  border-color: #EDB92A;
+
+}
+
+.jordanstown-tile {
+  min-height: 500px;
+  position: relative;
+  border-color: #364489;
+  margin-top: -30px;
+}
+
+.coleraine-tile {
+  min-height: 450px;
+  position: relative;
+  border-color: #D73479;
+  width: 80%;
+  margin-left: auto;
+}
+
+.magee-tile {
+  min-height: 350px;
+  position: relative;
+  border-color: #00A495;
+  margin-top: -130px;
+  width: 70%;
+}
+
+.brochure-tile {
+  position: relative;
+  margin-top: -230px;
+  width: 85%;
+  height: initial;
+  background-color: $primary-color;
+  color: white;
+  overflow: hidden;
+
+  &:after {
+    content: "";
+    position: absolute;
+    bottom: -300px;
+    left: -300px;
+    right: 30%;
+    top: -300px;
+    background-color: #26333e;
+    z-index: 1;
+    -webkit-transform: rotate(
+                    -20deg);
+    -ms-transform: rotate(-20deg);
+    transform: rotate(
+                    -20deg);
+
+  }
+
+  a {
+    color: white;
+  }
+
+  .content {
+    width: 70%;
+    padding-top: 2em;
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 2em;
+    z-index: 99;
+
+    h2 {
+      font-size: 45px;
+      line-height: 45px;
+    }
+
+    p, .button {
+      display: block;
+    }
+
+    .button {
+      margin-top: 3em;
+      margin-bottom: 0px
+    }
+  }
+}
+
+
+
+.square-tile {
+  min-height: 250px;
+  background-color: #eeeeee;
+  padding: 1em;
+  overflow: hidden;
+
+  .content {
+    left: 1.5em;
+    bottom: 1em;
+    right: 1.5em;
+
+    h3 {
+      font-size: 21px;
+    }
+
+    .smaller-button {
+      margin-top: 10px;
+    }
+  }
+}
+
+.gallery-tile {
+
+  min-height: 220px;
+
+  .image {
+    &:after {
+      display: none;
+    }
+  }
+}

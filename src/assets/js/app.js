@@ -15,3 +15,54 @@ require('foundation-sites');
 
 
 $(document).foundation();
+
+
+var swiper = new Swiper(".mySwiper", {
+    pagination: {
+        el: ".swiper-pagination",
+    },
+    slidesPerView: 3,
+    spaceBetween: 30,
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+});
+
+
+var swiper2 = new Swiper(".no-swipe", {
+    slidesPerView: 3,
+    spaceBetween: 30,
+});
+
+var swiper3 = new Swiper(".testimonial-swiper", {
+    pagination: {
+        el: ".swiper-pagination",
+    },
+    slidesPerView: 1,
+    spaceBetween: 30,
+    autoplay: {
+        delay: 6500,
+        disableOnInteraction: false,
+    },
+});
+
+var swiper = new Swiper(".swiper-gallery", {
+    pagination: {
+        el: ".swiper-pagination",
+    },
+    slidesPerView: 4,
+    spaceBetween: 30,
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+});
+
+AOS.init({
+    offset: 120, // offset (in px) from the original trigger point
+    delay: 0, // values from 0 to 3000, with step 50ms
+    duration: 600, // values from 0 to 3000, with step 50ms
+    easing: 'ease', // default easing for AOS animations
+    once: true,
+});

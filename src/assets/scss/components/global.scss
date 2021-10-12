@@ -1,3 +1,7 @@
+body {
+  color: #222e38;
+}
+
 .grid-container {
   padding-left: 4em;
   padding-right: 4em;
@@ -30,9 +34,26 @@ h1 {
   }
 }
 
-p {
-  font-size: 18px;
+h2 {
+  font-size: 50px;
+  line-height: 50px;
+  letter-spacing: 0px;
 }
+
+h3 {
+  font-size: 22px;
+  line-height: 22px;
+  margin-top: 13px;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+p {
+  font-size: 20px;
+  line-height: 27px;
+}
+
 
 .button {
   text-transform: uppercase;
@@ -42,13 +63,29 @@ p {
   font-size: 14px;
   background-color: rgba(0,0,0,0);
   border: 3px solid white;
-
+  color: white;
 
   &:hover {
     background-color: white;
     color: #222E38;
   }
 }
+
+.dark-button {
+  background-color: rgba(0,0,0,0);
+  border: 3px solid $primary-color;
+  color: $primary-color ;
+
+  &:hover {
+    background-color: white;
+    color: #222E38;
+  }
+}
+
+//.smaller-button {
+//  padding: 10px;
+//  border-width: 2px;
+//}
 
 
 @keyframes kenburns {
@@ -66,18 +103,141 @@ p {
 }
 
 
-header {
-  padding: 1.5em 0em;
-  position: absolute;
-  z-index: 999;
-  left: 0;
-  right: 0;
-  top:0;
+.small-padding {
+  padding: 4em 0em;
+}
+.small-padding-bottom {
+  padding-bottom: 4em;
+  padding-top: 0em;
+}
 
-  @include breakpoint(small only) {
-    img {
-      width: 100px;
-    }
+.small-padding-top {
+  padding-bottom: 0em;
+  padding-top: 4em;
+}
+
+.medium-padding {
+  padding: 6em 0em;
+}
+
+.medium-padding-bottom {
+  padding-bottom: 6em;
+  padding-top: 0em;
+}
+
+.medium-padding-top {
+  padding-bottom: 0em;
+  padding-top: 6em;
+}
+
+.large-padding {
+  padding: 8em 0em;
+}
+
+.large-padding-bottom {
+  padding-bottom: 8em;
+  padding-top: 0em;
+}
+
+.large-padding-top {
+  padding-bottom: 0em;
+  padding-top: 8em;
+}
+
+.dark-section {
+  background-color: $primary-color;
+  color: white;
+  position: relative;
+  overflow: visible !important;
+
+  .device {
+
+    position: absolute;
+    bottom: -2em;
+    right: 0;
+    left: 25%;
+    top: 0;
+    background-color: #172129;
+    z-index: 99;
+    clip-path: polygon(31% 0, 100% 0, 100% 100%, 50% 100%);
   }
 
+  .grid-container {
+    position: relative;
+    z-index: 999;
+  }
+
+  .swiper-pagination .swiper-pagination-bullet, .swiper-pagination .swiper-pagination-bullet-active {
+    background: white;
+  }
+}
+
+form {
+  padding: 1.5em 0em;
+
+  input, [type='text'], [type='password'], [type='date'], [type='datetime'], [type='datetime-local'], [type='month'], [type='week'], [type='email'], [type='number'], [type='search'], [type='tel'], [type='time'], [type='url'], [type='color'], textarea {
+    min-height: 60px;
+    font-size: 21px;
+    padding-left: 0px;
+    box-shadow: none;
+    border:0px;
+    border-bottom: 3px solid $primary-color;
+    margin-bottom: 20px;
+    background-color: #f3f3f4;
+
+  }
+
+  ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: $primary-color;
+    opacity: 1; /* Firefox */
+  }
+
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: $primary-color;
+  }
+
+  ::-ms-input-placeholder { /* Microsoft Edge */
+    color: $primary-color;
+  }
+
+  textarea {
+    min-height: 200px;
+
+    margin-bottom: 2em;
+  }
+
+  .half-input {
+    width: 49%;
+    display: inline-block;
+
+    &:first-child {
+      margin-right: 1.4%;
+    }
+  }
+}
+
+.detail-container {
+  text-align: center;
+  min-width: 30%;
+  display: inline-block;
+  background-color: #f7f7f8;
+  padding: 20px;
+  margin-right: 2%;
+  margin-bottom: 1em;
+  margin-top: 1em;
+
+  h3 {
+    margin-bottom: 0px !important;
+    font-size: 18px;
+  }
+
+  h4 {
+    margin-top: 0px;
+    font-size: 33px;
+  }
+
+}
+
+.light-grey-background {
+  background-color: #f3f3f4;
 }
