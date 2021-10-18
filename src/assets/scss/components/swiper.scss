@@ -37,7 +37,7 @@
 .testimonial-swiper {
   overflow: hidden;
   position: relative;
-  padding-left: 4em;
+  padding-left: 0em;
 
   &:before {
     content: "“";
@@ -119,3 +119,37 @@
   }
 }
 
+
+@include breakpoint (small only) {
+  .swiper-button-next, .swiper-button-prev {
+    top: initial;
+    bottom: 0;
+  }
+
+  .swiper {
+    padding-bottom: 4em;
+  }
+
+  .swiper .swiper-pagination {
+    bottom: 0em;
+  }
+
+  .dark-section .device {
+    display: none;
+  }
+  .testimonial-swiper .swiper-slide {
+    padding-bottom: 0em;
+  }
+
+  .testimonial-swiper {
+    padding-bottom: 2em;
+  }
+
+  .testimonial-swiper .swiper-slide p {
+    font-size: 18px;
+  }
+
+  .testimonial-swiper .swiper-pagination {
+    bottom: 0em;
+  }
+}

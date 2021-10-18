@@ -44,3 +44,33 @@
     margin-bottom: 20px;
   }
 }
+
+
+@include breakpoint (medium down) {
+  .text-image .img-container {
+    margin-top: 2em;
+  }
+
+  .image-text .content {
+    padding-left: 1em;
+    padding-top: 3em;
+  }
+  .image-text-container .small-padding {
+    padding: 1em 0em;
+  }
+}
+
+@include breakpoint (small only) {
+  .text-image .content {
+    padding-right: 0em;
+}
+.text-image .img-container img {
+  width: 95%;
+}
+.text-image .img-container:before {
+  right: 0;
+}
+.detail-container {
+  width: 100%;
+}
+}

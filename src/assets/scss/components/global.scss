@@ -6,10 +6,7 @@ body {
   padding-left: 4em;
   padding-right: 4em;
 
-  @include breakpoint(small only) {
-    padding-left: 2em;
-    padding-right: 2em;
-  }
+
 }
 
 h1,h2 {
@@ -240,4 +237,66 @@ form {
 
 .light-grey-background {
   background-color: #f3f3f4;
+}
+
+
+@include breakpoint (medium down) {
+  .default-page {
+    overflow: hidden;
+  }
+
+  .medium-padding {
+    padding: 4em 0em;
+  }
+
+  .dark-section .device {
+    left: 31%;
+  }
+
+  .grid-container {
+    padding-left: 3em;
+    padding-right: 3em;
+  }
+}
+
+@include breakpoint (small only) {
+    .grid-container {
+      padding-left: 1.5em;
+      padding-right: 1.5em;
+    }
+
+    h2 {
+    font-size: 39px;
+    line-height: 39px;
+  }
+
+  h3 {
+    font-size: 18px;
+    line-height: 18px;
+    margin-top: 5px;
+  }
+
+  .small-padding, .medium-padding {
+    padding: 2.5em 0em;
+}
+
+.button {
+  padding: 16px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-size: 12px;
+}
+
+p {
+    font-size: 18px;
+    line-height: 24px;
+}
+
+form .half-input {
+  width: 100%;
+}
+
+.swiper-section {
+  overflow: hidden !important;
+}
 }

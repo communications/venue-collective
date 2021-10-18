@@ -55,4 +55,28 @@ footer {
     border-left: 2px solid white;
     padding-left: 20px;
   }
+
+  .social-media {
+    padding: 6em 0em 0em;
+    .fab {
+      font-size: 30px;
+      margin-right: 10px;
+    }
+  }
+}
+
+@include breakpoint (medium down) {
+    footer .social-media {
+      padding: 2em 0em;
+  }
+}
+
+@include breakpoint (small only) {
+  footer img {
+    width: 117px;
+}
+
+footer .text-right {
+  text-align: left;
+}
 }

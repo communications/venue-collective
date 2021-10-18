@@ -210,3 +210,87 @@
     }
   }
 }
+
+
+
+
+
+
+@include breakpoint (medium down) {
+  .belfast-tile {
+    min-height: 400px;
+  }
+  .jordanstown-tile {
+    min-height: 400px;
+  }
+  .coleraine-tile {
+    min-height: 239px;
+  width: 100%;
+  }
+  .magee-tile {
+    min-height: 300px;
+    margin-top: -28px;
+    width: 100%;
+  }
+  .brochure-tile {
+    position: relative;
+    margin-top: 2em;
+    width: 100%;
+    .content {
+      width: 100%;
+    }
+  }
+
+  .square-tile {
+    min-height: 150px;
+  }
+  .square-tile .content h3 {
+    font-size: 18px;
+}
+}
+
+
+@include breakpoint (small only) {
+  .belfast-tile {
+    min-height: 300px;
+    margin-top: 2em;
+  }
+  .jordanstown-tile {
+    min-height: 300px;
+    margin-top: 2em;
+  }
+  .coleraine-tile {
+    min-height: 300px;
+  width: 100%;
+  margin-top: 2em;
+  }
+  .magee-tile {
+    min-height: 300px;
+    margin-top: 2em;
+    width: 100%;
+  }
+  .brochure-tile {
+    position: relative;
+    margin-top: 2em;
+    width: 100%;
+    .content {
+      width: 100%;
+    }
+  }
+
+  .square-tile {
+    min-height: 150px;
+  }
+  .square-tile .content h3 {
+    font-size: 18px;
+}
+
+.tile .content h3 {
+    font-size: 21px;
+}
+.tile .content {
+  left: 1.5em;
+  bottom: 1.5em;
+  right: 1.5em;
+}
+}

@@ -4,6 +4,8 @@
   position: relative;
   overflow: hidden;
 
+
+
   .grid-container, .grid-x {
     height: 100%;
     position: relative;
@@ -189,4 +191,44 @@
     width: 100%;
     background-color: #a1a9b0;
   }
+}
+
+
+
+@include breakpoint(medium down) {
+.hero {
+  height: 60vh;
+}
+
+.hero:before {
+  right: 38%;
+}
+.hero:after {
+  right: 49%;
+}
+.hero .hero-image {
+  left: 44%;
+}
+}
+
+@include breakpoint(small only) {
+.hero:before {
+  right: 0;
+}
+.hero .hero-image {
+  left: 0;
+}
+.hero:after {
+  display: none;
+}
+.hero {
+    height: initial;
+    min-height: 0px;
+}
+.hero .content p {
+    width: 100%;
+}
+.hero h2 {
+    font-size: 20px;
+}
 }

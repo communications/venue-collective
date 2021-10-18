@@ -27,12 +27,45 @@ var swiper = new Swiper(".mySwiper", {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
     },
+
+    breakpoints: {
+      640: {
+        slidesPerView: 1,
+        spaceBetween: 20,
+      },
+      1023: {
+        slidesPerView: 1.2,
+        spaceBetween: 20,
+      }
+
+    },
 });
 
 
 var swiper2 = new Swiper(".no-swipe", {
     slidesPerView: 3,
     spaceBetween: 30,
+    breakpoints: {
+      640: {
+        slidesPerView: 1,
+        spaceBetween: 20,
+      },
+      1023: {
+        slidesPerView: 1,
+        spaceBetween: 30,
+
+        pagination: {
+            el: ".swiper-pagination",
+        },
+        slidesPerView: 1.2,
+        spaceBetween: 20,
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+      }
+
+    },
 });
 
 var swiper3 = new Swiper(".testimonial-swiper", {
@@ -51,12 +84,24 @@ var swiper = new Swiper(".swiper-gallery", {
     pagination: {
         el: ".swiper-pagination",
     },
-    slidesPerView: 4,
+    slidesPerView: 3,
     spaceBetween: 30,
     navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
     },
+
+    breakpoints: {
+      640: {
+        slidesPerView: 1,
+
+      },
+      1023: {
+
+        slidesPerView: 1.2,
+
+      }
+    }
 });
 
 AOS.init({
@@ -65,4 +110,45 @@ AOS.init({
     duration: 600, // values from 0 to 3000, with step 50ms
     easing: 'ease', // default easing for AOS animations
     once: true,
+    disable: "mobile",
 });
+
+
+
+$(document).ready(function(){
+
+    var buttonclicked;
+
+    $('.nav-menu').click(function(){
+        if( buttonclicked!= true ) {
+            buttonclicked= true;
+            $('#nav-icon1,#nav-icon2,#nav-icon3,#nav-icon4').toggleClass('open');
+            $('header nav').slideToggle();
+
+
+
+        }
+        else
+        {
+            $('#nav-icon1,#nav-icon2,#nav-icon3,#nav-icon4').toggleClass('open');
+            $('header nav').slideToggle();
+
+        }
+    });
+});
+
+
+// Sticky hamburger menu on tablet and mobile.
+$(document).ready(function() {
+    $(window).scroll(function() {
+        if ($(document).scrollTop() > 5) {
+            $('header').addClass('fixed-header');
+
+
+        }
+        else {
+            $('header').removeClass('fixed-header');
+        }
+
+    })
+})
