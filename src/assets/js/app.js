@@ -135,6 +135,22 @@ $(document).ready(function(){
 
         }
     });
+
+    if($(".swiper-experiences .swiper-slide").length <= 3) {
+      $('.swiper').addClass( "disabled-swiper" );
+    }
+
+    if($(".swiper-expertise .swiper-slide").length <= 3) {
+      $('.swiper').addClass( "disabled-swiper" );
+    }
+    if($(".swiper-facilities .swiper-slide").length <= 3) {
+      $('.swiper').addClass( "disabled-swiper" );
+    }
+
+    if($(".swiper-staff .swiper-slide").length <= 3) {
+      $('.swiper').addClass( "disabled-swiper" );
+    }
+
 });
 
 
