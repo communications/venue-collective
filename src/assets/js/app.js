@@ -138,6 +138,8 @@ $(document).ready(function(){
 
     if($(".swiper-experiences .swiper-slide").length <= 3) {
       $('.swiper').addClass( "disabled-swiper" );
+
+      console.log($(".swiper-experiences .swiper-slide").length);
     }
 
     if($(".swiper-expertise .swiper-slide").length <= 3) {
