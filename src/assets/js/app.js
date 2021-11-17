@@ -69,14 +69,16 @@ var swiper2 = new Swiper(".no-swipe", {
 });
 
 var swiper3 = new Swiper(".testimonial-swiper", {
-    pagination: {
-        el: ".swiper-pagination",
-    },
+
     slidesPerView: 1,
     spaceBetween: 30,
     autoplay: {
-        delay: 6500,
-        disableOnInteraction: false,
+        delay: 8500,
+        disableOnInteraction: true,
+    },
+    loop: true,
+    pagination: {
+        el: ".swiper-pagination",
     },
 });
 
