@@ -137,20 +137,20 @@ $(document).ready(function(){
     });
 
     if($(".swiper-experiences .swiper-slide").length <= 3) {
-      $('.swiper').addClass( "disabled-swiper" );
+      $('.swiper-experiences').addClass( "disabled-swiper" );
 
       console.log($(".swiper-experiences .swiper-slide").length);
     }
 
     if($(".swiper-expertise .swiper-slide").length <= 3) {
-      $('.swiper').addClass( "disabled-swiper" );
+      $('.swiper-expertise').addClass( "disabled-swiper" );
     }
     if($(".swiper-facilities .swiper-slide").length <= 3) {
-      $('.swiper').addClass( "disabled-swiper" );
+      $('.swiper-facilities').addClass( "disabled-swiper" );
     }
 
     if($(".swiper-staff .swiper-slide").length <= 3) {
-      $('.swiper').addClass( "disabled-swiper" );
+      $('.swiper-staff').addClass( "disabled-swiper" );
     }
 
 });
