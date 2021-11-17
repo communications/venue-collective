@@ -7,6 +7,7 @@
   border-bottom: 8px solid white;
   overflow: hidden;
   color: white;
+  position: relative;
 
   a {
     color: white;
@@ -199,6 +200,10 @@
       margin-top: 10px;
     }
   }
+}
+
+.stack-tile {
+  min-height: 350px;
 }
 
 .gallery-tile {
