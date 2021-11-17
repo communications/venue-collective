@@ -13,6 +13,7 @@
 
   .img-container {
     position: relative;
+    display: inline-block;
 
     &:before {
       content:"";
