@@ -176,12 +176,12 @@ form {
   input, [type='text'], [type='password'], [type='date'], [type='datetime'], [type='datetime-local'], [type='month'], [type='week'], [type='email'], [type='number'], [type='search'], [type='tel'], [type='time'], [type='url'], [type='color'], textarea {
     min-height: 60px;
     font-size: 21px;
-    padding-left: 0px;
+  
     box-shadow: none;
     border:0px;
     border-bottom: 3px solid $primary-color;
     margin-bottom: 20px;
-    background-color: #f3f3f4;
+
 
   }
 
