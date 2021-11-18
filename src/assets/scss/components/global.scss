@@ -176,7 +176,7 @@ form {
   input, [type='text'], [type='password'], [type='date'], [type='datetime'], [type='datetime-local'], [type='month'], [type='week'], [type='email'], [type='number'], [type='search'], [type='tel'], [type='time'], [type='url'], [type='color'], textarea {
     min-height: 60px;
     font-size: 21px;
-  
+
     box-shadow: none;
     border:0px;
     border-bottom: 3px solid $primary-color;
@@ -300,4 +300,36 @@ form .half-input {
 .swiper-section {
   overflow: hidden !important;
 }
+}
+
+.belfast-campus-page {
+
+  .text-image .img-container:before {
+    background-color: #EDB92A;
+  }
+
+}
+
+.jordanstown-campus-page {
+
+  .text-image .img-container:before {
+    background-color: #364489;
+  }
+  
+}
+
+.coleraine-campus-page {
+
+  .text-image .img-container:before {
+    background-color: #D73479;
+  }
+
+}
+
+.magee-campus-page {
+
+  .text-image .img-container:before {
+    background-color: #00A495;
+  }
+
 }
