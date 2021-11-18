@@ -242,6 +242,12 @@ form {
   background-color: #f3f3f4;
 }
 
+.light-section {
+  .tile {
+    border-color: #222e38;
+  }
+}
+
 
 @include breakpoint (medium down) {
   .default-page {
