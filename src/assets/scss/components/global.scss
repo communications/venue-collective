@@ -5,8 +5,10 @@ body {
 .grid-container {
   padding-left: 4em;
   padding-right: 4em;
+}
 
-
+.default-page {
+  overflow: hidden;
 }
 
 h1,h2 {
@@ -315,7 +317,7 @@ form .half-input {
   .text-image .img-container:before {
     background-color: #364489;
   }
-  
+
 }
 
 .coleraine-campus-page {
