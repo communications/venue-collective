@@ -48,6 +48,20 @@
 }
 
 
+.image-text {
+  .img-container {
+    max-width: 100%;
+  }
+
+  h2 {
+    font-size: 50px;
+    line-height: 50px;
+  }
+
+
+}
+
+
 @include breakpoint (medium down) {
   .text-image .img-container {
     margin-top: 2em;
